@@ -40,6 +40,7 @@ onUnmounted(() => {
 
 const pageLinks = [
   { name: 'Home', path: '/', icon: '⌂', desc: 'Main landing dashboard' },
+  { name: 'Greeting Vue', path: '/GreetingVuePage/GreetingVuePage', icon: '👋', desc: 'Simple centered greeting card' },
   { name: 'Simple Page', path: '/SimplePage/SimplePageView', icon: '📄', desc: 'Basic page demonstration' },
   { name: 'Quote Generator', path: '/QuoteGenerator/QuoteGeneraorView', icon: '💬', desc: 'Interactive quote maker' },
   { name: 'About', path: '/about', icon: 'ℹ', desc: 'Project & course information' }

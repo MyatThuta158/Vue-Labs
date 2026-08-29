@@ -28,6 +28,8 @@ import { RouterView } from 'vue-router'
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

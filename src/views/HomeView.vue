@@ -3,6 +3,13 @@ import { RouterLink } from 'vue-router'
 
 const features = [
   {
+    title: 'Greeting Vue Page',
+    path: '/GreetingVuePage/GreetingVuePage',
+    icon: '👋',
+    tag: 'Greeting Card',
+    description: 'Clean and simple centered card design with official Vue logo and welcoming greeting.'
+  },
+  {
     title: 'Simple Page',
     path: '/SimplePage/SimplePageView',
     icon: '📄',

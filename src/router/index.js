@@ -28,6 +28,15 @@ const router = createRouter({
       path: '/quote-generator',
       redirect: '/QuoteGenerator/QuoteGeneraorView',
     },
+    {
+      path: '/GreetingVuePage/GreetingVuePage',
+      name: 'GreetingVuePage',
+      component: () => import('../views/GreetingVuePage/GreetingVuePage.vue'),
+    },
+    {
+      path: '/greeting',
+      redirect: '/GreetingVuePage/GreetingVuePage',
+    },
   ],
 })
 

@@ -15,6 +15,7 @@ const year = ref(new Date().getFullYear())
 
       <nav class="footer-nav">
         <RouterLink to="/" class="footer-link">Home</RouterLink>
+        <RouterLink to="/GreetingVuePage/GreetingVuePage" class="footer-link">Greeting Vue</RouterLink>
         <RouterLink to="/SimplePage/SimplePageView" class="footer-link">Simple Page</RouterLink>
         <RouterLink to="/QuoteGenerator/QuoteGeneraorView" class="footer-link">Quote Generator</RouterLink>
         <RouterLink to="/about" class="footer-link">About</RouterLink>
