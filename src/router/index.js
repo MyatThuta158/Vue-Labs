@@ -12,18 +12,30 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
-     {
+    {
       path: '/SimplePage/SimplePageView',
       name: 'SimplePageView',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/SimplePage/SimplePageView.vue'),
+    },
+    {
+      path: '/QuoteGenerator/QuoteGeneraorView',
+      name: 'QuoteGeneraorView',
+      component: () => import('../views/QuoteGenerator/QuoteGeneraorView.vue'),
+    },
+    {
+      path: '/quote-generator',
+      redirect: '/QuoteGenerator/QuoteGeneraorView',
+    },
+    {
+      path: '/GreetingVuePage/GreetingVuePage',
+      name: 'GreetingVuePage',
+      component: () => import('../views/GreetingVuePage/GreetingVuePage.vue'),
+    },
+    {
+      path: '/greeting',
+      redirect: '/GreetingVuePage/GreetingVuePage',
     },
   ],
 })
