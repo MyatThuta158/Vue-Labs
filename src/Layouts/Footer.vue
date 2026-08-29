@@ -1,21 +1,7 @@
 <script setup>
-import { ref } from 'vue'
-
-const year = ref(new Date().getFullYear())
+import Footer from './MainPage/Footer.vue'
 </script>
 
 <template>
-  <div class="footer">
-    <p>&copy; {{ year }} Vue-labs App. All rights reserved.</p>
-  </div>
+  <Footer />
 </template>
-
-<style scoped>
-.footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  color: var(--color-text);
-  width: 100%;
-}
-</style>
