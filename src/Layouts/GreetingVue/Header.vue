@@ -2,12 +2,19 @@
 import { ref } from 'vue'
 
 const name = ref('Vue')
+
+const href=ref("")
+
+href.value="https://vuejs.org/"
 </script>
 
 <template>
   <header class="greeting-header">
     <div class="logo-wrapper">
-      <img alt="Vue logo" class="vue-logo" src="@/assets/logo.svg" width="90" height="90" />
+        <a :href>
+            <img alt="Vue logo" class="vue-logo" src="@/assets/logo.svg" width="90" height="90" />
+        </a>
+     
     </div>
     <h1 class="greeting-title">
       Hi, I'm <span class="highlight">{{ name }}</span>

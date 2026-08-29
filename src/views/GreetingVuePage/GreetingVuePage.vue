@@ -1,6 +1,33 @@
 <script setup>
 import Header from '@/Layouts/GreetingVue/Header.vue'
 import Footer from '@/Layouts/GreetingVue/Footer.vue'
+import { ref } from 'vue'
+const facts = ref([
+  {
+    title: "Reactive",
+    desc: "Vue automatically updates the UI when reactive data changes."
+  },
+  {
+    title: "Component-Based",
+    desc: "Vue applications are built using reusable and independent components."
+  },
+  {
+    title: "Easy to Learn",
+    desc: "Vue has a simple syntax and is beginner-friendly, especially for web developers."
+  },
+  {
+    title: "Fast Performance",
+    desc: "Vue uses a virtual DOM to efficiently update only the parts of the page that change."
+  },
+  {
+    title: "Single-File Components",
+    desc: "Vue components can combine HTML, CSS, and JavaScript in a single .vue file."
+  },
+  {
+    title: "Flexible",
+    desc: "Vue can be used for small interactive features or complete single-page applications."
+  }
+])
 </script>
 
 <template>
@@ -12,6 +39,13 @@ import Footer from '@/Layouts/GreetingVue/Footer.vue'
         <p class="greeting-text">
           Welcome to the Greeting Vue Page. This project features a clean, focused card layout with reactive Vue 3 components centered on the page.
         </p>
+
+        <div v-for="fact in facts"
+        :key:="fact.title"
+        class="fact">
+            <h4>{{ fact.title }}</h4>
+            <p>{{fact.desc}}</p>
+        </div>
       </main>
 
       <Footer />
